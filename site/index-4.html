@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Escribenos</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/contact-form.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cookiecuttr.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src = "js/jquery.cookie.js" ></script> 
+    <script src = "js/jquery.cookiecuttr.js" ></script>
+
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src='js/device.min.js'></script>
+</head>
+
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header id="header" class="header">
+        <div id="stuck_container" class="stuck_container">
+            <div class="container">
+                <div class="header_panel">
+                    <div class="brand">
+                        <h1 class="brand_name">
+                            <a href="index.html">DMESA
+                                <span class="brand_slogan">El sazón de la comida cubana</span>
+                            </a>
+                        </h1>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="sf-menu">
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="index-1.html">Mercados</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Quisque nulla</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Vestibulum libero</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Lorem</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dolor</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Sit amet</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Vivamus eget nibh</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index-2.html">news</a>
+                            </li>
+                            <li>
+                                <a href="index-3.html">Productos</a>
+                            </li>
+                            <li class="active">
+                                <a href="index-4.html">Escribenos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <section id="content" class="content">
+
+        <div class="well well__ins1">
+            <div class="heading heading_skin1 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="container">
+                    <h3>how to find us</h3>
+                </div>
+            </div>
+            <div class="container off1">
+                <div id="google-map" class="map"></div>
+                <p class="wow fadeInLeft" data-wow-delay="0.4s">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
+                    sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam.
+                    Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in,
+                    auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis
+                    dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus.</p>
+
+                <div class="row">
+                    <div class="grid_3 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="addr"><span class="i1 fa fa-home"></span>
+                            <h4>finca la <br/>
+                                 caridad     </h4>
+                        </div>
+                    </div>
+                    <div class="grid_3 wow fadeInRight" data-wow-delay="0.6s">
+                        <div class="addr"><span class="i2 fa fa-phone"></span>
+                            <h4>+5355946907<br/>
+                                +5355946907</h4>
+                        </div>
+                    </div>
+                    <div class="grid_3 wow fadeInRight" data-wow-delay="0.8s">
+                        <div class="addr"><span class="i3 fa fa-envelope"></span>
+                            <h4>
+                                <a href="mailto:#">alvaroboss20@gmail.com</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="heading heading_skin3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="container">
+                <h3>contact form</h3>
+            </div>
+        </div>
+
+        <div class="bg-content well1">
+            <div class="container">
+                <form id="contact-form" class='contact-form'>
+                    <div class="contact-form-loader"></div>
+                    <fieldset>
+                        <div class="row">
+                            <div class="grid_6">
+                                <label class="name wow fadeInLeft" data-wow-delay="0.4s">Name
+                                    <input type="text" name="name" placeholder="" value=""
+                                           data-constraints="@Required @JustLetters"/>
+
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*This is not a valid name.</span>
+                                </label>
+
+                                <label class="email wow fadeInLeft" data-wow-delay="0.6s">E-mail
+                                    <input type="text" name="email" placeholder="" value=""
+                                           data-constraints="@Required @Email"/>
+
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*This is not a valid email.</span>
+                                </label>
+
+                                <label class="phone wow fadeInLeft" data-wow-delay="0.8s">Phone
+                                    <input type="text" name="phone" placeholder="" value=""
+                                           data-constraints="@JustNumbers"/>
+
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*This is not a valid phone.</span>
+                                </label>
+                            </div>
+                            <div class="grid_6 wow fadeInRight" data-wow-delay="1s">
+
+                                <label class="message">Message
+                                    <textarea name="message" placeholder=""
+                                              data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+
+                                    <span class="empty-message">*This field is required.</span>
+                                    <span class="error-message">*The message is too short.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="btn-wr wow fadeInRight" data-wow-delay="0.6s">
+                            <a class="btn" href="#" data-type="submit">send message</a>
+                        </div>
+                    </fieldset>
+                    <div class="modal fade response-message">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">
+                                        &times;
+                                    </button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    You message has been sent! We will be in touch soon.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright wow fadeInUp" data-wow-delay="0.4s">
+                Ask Fibby © <span id="copyright-year"></span> All Rights Reserved |
+                <a href="index-5.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
