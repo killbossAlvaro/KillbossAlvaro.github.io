@@ -444,7 +444,7 @@ p.off2 {
       padding: 11px 20px 3px 25px; }
     .brand .brand_name span {
       display: block;
-      margin-top: 5px; }
+      margin-top: 25px; }
     .brand .brand_name:before {
       content: '';
       position: absolute;
@@ -460,9 +460,9 @@ p.off2 {
       position: absolute;
       left: 0;
       top: 0;
-      width: 64px;
-      height: 56px;
-      background: url(../images/logo.png) no-repeat; }
+      width: 150px;
+      height: 60px;
+      background: url(../images/logo.jpeg) no-repeat; }
   .brand:before, .brand:after {
     display: table;
     content: "";
