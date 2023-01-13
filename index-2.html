@@ -1,355 +1,318 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-     
-   
-    <title>News</title>
+    <title>productos</title>
     <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no"/>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cookiecuttr.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/carousel.css" type="text/css" media="screen">
+		<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.equalheights.js"></script>
+    <script type="text/javascript" src="js/jquery.carouFredSel-6.1.0.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script>
+      $(window).load(function() {   
+        jQuery(".maxheight-1").equalHeights();  
+        //  Responsive layout, resizing the items
+            $('#foo4').carouFredSel({
+            auto: false,
+            responsive: true,
+            width: '100%',    
+            scroll: 1,
+            prev: '#prev',
+            next: '#next',
+            pagination: false,
+            mousewheel: true,
+            items: {
+            height: 'auto',
+            width: '270',
+            visible: {
+            min: 1,
+            max: 3
+            }
+            },
+            swipe: {
+              onMouse: true,
+              onTouch: true
+              }
+            });
+          })
+    </script>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
-    <script src = "js/jquery.cookie.js" ></script> 
-    <script src = "js/jquery.cookiecuttr.js" ></script>
-
+  	<!--[if lt IE 8]>
+    		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+   	<![endif]-->
     <!--[if lt IE 9]>
-    <html class="lt-ie9">
-    <div style=' clear: both; text-align:center; position: relative;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
-                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-        </a>
-    </div>
-    <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <script src='js/device.min.js'></script>
 </head>
 
 <body>
-<div class="page">
-    <!--========================================================
-                              HEADER
-    =========================================================-->
-    <header id="header" class="header">
-        <div id="stuck_container" class="stuck_container">
-            <div class="container">
-                <div class="header_panel">
-                    <div class="brand">
-                      <h1 class="brand_name">
-                            <a href="index.html">
-                                <span class="brand_slogan">&nbsp;</span>
-                            </a>
-                        </h1>
-                    </div>  
-
-                    <nav class="nav">
-                        <ul class="sf-menu">
-                            <li class="active">
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="index-1.html">Sugerencias</a>
-                                <ul>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                        <ul>
-                                            <li>
-                                                <a href="#"></a>
-                                            </li>
-                                            <li>
-                                                <a href="#">r</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-2.html">Mercados</a>
-                            </li>
-                            <li>
-                                <a href="index-3.html">Productos</a>
-                            </li>
-                            <li>
-                                <a href="index-4.html">Escribenos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-
-    </header>
-    <!--========================================================
-                              CONTENT
-    =========================================================-->
-    <section id="content" class="content">
-
-        <div class="well well__ins1">
-            <div class="heading heading_skin2 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="container">
-                    <h3>special news</h3>
-                </div>
-            </div>
-            <div class="container off1">
-                <div class="row">
-                    <div class="grid_4 wow fadeInRight" data-wow-delay="0.4s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img01_original.jpg">
-                            <img data-src="images/page-3_img01.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                    <div class="grid_4 wow fadeInRight" data-wow-delay="0.6s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img02_original.jpg">
-                            <img data-src="images/page-3_img02.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                    <div class="grid_4 wow fadeInRight" data-wow-delay="0.8s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img03_original.jpg">
-                            <img data-src="images/page-3_img03.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                </div>
-                <div class="row off1">
-                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.8s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img04_original.jpg">
-                            <img data-src="images/page-3_img04.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.6s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img05_original.jpg">
-                            <img data-src="images/page-3_img05.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.4s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img06_original.jpg">
-                            <img data-src="images/page-3_img06.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                </div>
-                <div class="row off1">
-                    <div class="grid_4 wow fadeInUp" data-wow-delay="0.4s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img07_original.jpg">
-                            <img data-src="images/page-3_img07.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                    <div class="grid_4 wow fadeInUp" data-wow-delay="0.8s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img08_original.jpg">
-                            <img data-src="images/page-3_img08.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                    <div class="grid_4 wow fadeInUp" data-wow-delay="0.6s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 54.59459459459459%"
-                           href="images/page-3_img09_original.jpg">
-                            <img data-src="images/page-3_img09.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h5 class="off2">Posted on
-                            <a href="#">April 18, 2014</a>
-                            by
-                            <a href="#">Admin</a>
-                            in
-                            <a href="#">General</a>
-                        </h5>
-                        <h4 class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="heading heading_skin1 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="container">
-                <h3>joyful events</h3>
-            </div>
-        </div>
-
-        <div class="bg-content">
-            <div class="container well">
-                <div class="row">
-                    <div class="grid_6 wow fadeInLeft" data-wow-delay="0.6s">
-                        <div class="row">
-                            <div class="grid_2">
-                                <div class="lazy-img mg-add" style="padding-bottom: 133.5294117647059%">
-                                    <img data-src="images/page-3_img10.jpg" src="#" alt=""/>
-                                </div>
-                            </div>
-                            <div class="grid_4">
-                                <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis
-                                    dignissim.</p>
-                                <ul class="marked-list off1">
-                                    <li>
-                                        <a href="#">In faucibus orci luctus et</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Ultrices posuere cubilia Curae</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Suspendisse sollicitudin velit sed</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Ut pharetra augue nec augue</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Nam elit agna,endrerit sit amet</a>
-                                    </li>
-                                </ul>
-                            </div>
+<!--==============================header=================================-->
+<header>
+  
+    <div class="container">
+         <div class="navbar navbar_ clearfix">
+            <div class="navbar-inner">      
+                  <div class="clearfix">
+                  	<h1 class="brand"><a href="index.html"><img src="img/logo.png" alt=""></a></h1> 
+                  	<div class="nav-collapse nav-collapse_ collapse">
+                  	    <div class="clearfix">
+                          <ul class="nav sf-menu clearfix">
+                            <li><a href="index.html">inicio</a></li>
+                            <li class="active sub-menu"><a href="index-1.html">mision&nbsp;</a>                            </li>
+                            <li><a href="index-2.html">productos&nbsp;</a></li>
+                            <li><a href="index-3.html">&nbsp;mercados</a></li>
+                            <li><a href="index-4.html">escribenos&nbsp;</a></li>
+                          </ul>
+                          <div class="div-search">
+                            <span>buscar&nbsp;</span>
+                            <form id="search" action="search.php" method="GET" accept-charset="utf-8">
+                             <input type="text" value="" name="s">
+                            <a href="#" onClick="document.getElementById('search').submit()"></a>
+                            </form>
+                          </div>
                         </div>
-                    </div>
-                    <div class="grid_6 wow fadeInRight" data-wow-delay="0.6s">
-                        <div class="row">
-                            <div class="grid_2">
-                                <div class="lazy-img mg-add" style="padding-bottom: 133.5294117647059%">
-                                    <img data-src="images/page-3_img11.jpg" src="#" alt=""/>
-                                </div>
-                            </div>
-                            <div class="grid_4">
-                                <p>Praesent justo dolor, lobortis quis, lobortis dignissim.
-                                    pulvinar ac, lorem. Vestibulum sed ante. </p>
-                                <ul class="marked-list off1">
-                                    <li>
-                                        <a href="#">Vivamus eget nibh</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Etiam cursus leo vel metus</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Nulla facilisi</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Aenean nec eros</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Vestibulum ante ipsum primis</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                  	</div>
+                  </div>
+             </div>  
+         </div>
+    </div>
+
+</header>
+<div id="content">
+  <div class="container"> 
+        <div class="row">
+             <ul class="thumbnails-1">
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>colorante&nbsp;&nbsp;</h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                     sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                     veniam, quis nostrud exerci tation ullamcorper suscipit 
+                     lobortis nisl ut aliquip ex ea.</p>
+                      <a href="#" class="btn btn-1"><span>disponible&nbsp;</span></a>
+                   </div>
+
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>sazonador&nbsp;&nbsp; </h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img-1.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                     sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                     veniam, quis nostrud exerci tation ullamcorper suscipit 
+                     lobortis nisl ut aliquip ex ea.</p>
+                      <a href="#" class="btn btn-1"><span>disponible&nbsp;</span></a>
+                   </div>
+
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>ajo en polvo&nbsp;</h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img-2.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                     sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                     veniam, quis nostrud exerci tation ullamcorper suscipit 
+                     lobortis nisl ut aliquip ex ea.</p>
+                      <a href="#" class="btn btn-1"><span>disponible&nbsp;</span></a>
+                   </div>
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>bijol&nbsp;&nbsp; </h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img-1.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                       veniam, quis nostrud exerci tation ullamcorper suscipit 
+                       lobortis nisl ut aliquip ex ea.</p>
+                     <a href="#" class="btn btn-1"><span>&nbsp;disponible</span></a> </div>
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>sason completo&nbsp;&nbsp; </h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img-1.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                       veniam, quis nostrud exerci tation ullamcorper suscipit 
+                       lobortis nisl ut aliquip ex ea.</p>
+                     <a href="#" class="btn btn-1"><span>disponible&nbsp;</span></a></div>
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>curry&nbsp;&nbsp; </h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img-1.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                       veniam, quis nostrud exerci tation ullamcorper suscipit 
+                       lobortis nisl ut aliquip ex ea.</p>
+                     <a href="#" class="btn btn-1"><span>disponible&nbsp;</span></a></div>
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>curry&nbsp;&nbsp; </h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img-1.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                       veniam, quis nostrud exerci tation ullamcorper suscipit 
+                       lobortis nisl ut aliquip ex ea.</p>
+                     <a href="#" class="btn btn-1"><span>disponible&nbsp;</span></a></div>
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>curry&nbsp;&nbsp; </h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img-1.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                       veniam, quis nostrud exerci tation ullamcorper suscipit 
+                       lobortis nisl ut aliquip ex ea.</p>
+                     <a href="#" class="btn btn-1"><span>disponible&nbsp;</span></a></div>
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4">
+                 <div class="block-thumbnail-1 maxheight-1">
+                   <h2>curry&nbsp;&nbsp; </h2>
+                   <figure class="img-polaroid"><img src="img/page-2-img-1.jpg" alt=""></figure>
+                   <div class="extra-wrap">
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                       veniam, quis nostrud exerci tation ullamcorper suscipit 
+                       lobortis nisl ut aliquip ex ea.</p>
+                     <a href="#" class="btn btn-1"><span>disponible&nbsp;</span></a></div>
+                 </div>
+               </li>
+               <li class="thumbnail-1 span4"> </li>
+               <li class="thumbnail-1 span4"> </li>
+             </ul>
+              
+          <article class="span12"><div class="divider"></div></article>
+    </div>
+        <div class="row">
+          <article class="span12">
+            <h2 class="h2indent">Press &amp; Media</h2>
+
+            <div class="list_carousel responsive">
+                <ul id="foo4">      
+                    <li>
+                      <time class="date font12" datetime="2013-01-01">December 17, 2012</time>
+                      <h5><a href="#">Lorem ipsum dolor sit amet, consect
+                      etuer adipiscing elit.</a></h5>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+veniam, quis nostrud exerci.</p>
+                    </li>
+
+                    <li>
+                      <time class="date font12" datetime="2013-01-01">December 18, 2012</time>
+                      <h5><a href="#">Lorem ipsum dolor sit amet, consect
+                      etuer adipiscing elit.</a></h5>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+veniam, quis nostrud exerci.</p>
+                    </li>
+
+                    <li>
+                      <time class="date font12" datetime="2013-01-01">December 19, 2012</time>
+                      <h5><a href="#">Lorem ipsum dolor sit amet, consect
+                      etuer adipiscing elit.</a></h5>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+veniam, quis nostrud exerci.</p>
+                    </li>
+
+                    <li>
+                      <time class="date font12" datetime="2013-01-01">December 20, 2012</time>
+                      <h5><a href="#">Lorem ipsum dolor sit amet, consect
+                      etuer adipiscing elit.</a></h5>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+veniam, quis nostrud exerci.</p>
+                    </li>
+                </ul>
+                <div class="div-control">
+                  <a href="#" id="prev"></a>
+                  <a href="#" id="next"></a>
                 </div>
             </div>
+
+          </article>
         </div>
+  </div>
+</div> 
+<footer>
+  <div class="container">
+	     <div class="row">
+           <article class="span12"></article>
+           <article class="span3">
+             <h5>about us </h5>
+             <p>Lorem ipsum dolor sit amet, consectetuerd
+ipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+erat volutpat. Ut wisi enim ad minim. </p>
+              <a href="#" class="btn btn-1"><span>Read More</span></a>
+           </article>
+           <article class="span3">
+             <h5>Featured Resources</h5>
+             <ul class="list">
+               <li><a href="#">Satellite Blog</a></li>
+               <li><a href="#">Image Library</a></li>
+               <li><a href="#">Newsroom</a></li>
+               <li><a href="#">Subscribe to our Social Media</a></li>
+               <li><a href="#">FAQs</a></li>
+               <li><a href="#">Partnership</a></li>
+             </ul>
+           </article>
+           <article class="span3">
+             <h5>Worldwide Offices</h5>
+             <p>Lorem ipsum dolor sit amet, consect
+etuerdipiscing elit, sed diam nonummynibh euismod tincidunt ut laoreet dolo.</p>
+              <ul class="list">
+                <li><a href="#">United States of America</a></li>
+                <li><a href="#">Northern &amp;  Western Europe</a></li>
+                <li><a href="#">Central &amp;  Eastern Europe</a></li>
+              </ul>
+           </article>
+	         <article class="span3">
+                 <div class="block-footer">
+                   <span>satellite &copy; 2013 | &nbsp;</span><a href="index-5.html">Privacy Policy</a><br>
+                   <ul class="list-soc">
+                     <li><a href="#" class="icon"></a></li>
+                     <li><a href="#" class="icon-1"></a></li>
+                     <li><a href="#" class="icon-2"></a></li>
+                   </ul>
+                 </div>
 
-
-    </section>
-
-    <!--========================================================
-                              FOOTER
-    =========================================================-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="copyright wow fadeInUp" data-wow-delay="0.4s">
-                 <span id="copyright-year">&nbsp;</span> 
-                <a href="index-5.html">&nbsp;</a>
-            </div>
-        </div>
-    </footer>
-</div>
-
-<script src="js/script.js"></script>
+                 
+           </article>
+       </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>

@@ -1,93 +1,82 @@
 /**
- * jQuery Mobile Menu
+ * jQuery Mobile Menu 
  * Turn unordered list menu into dropdown select menu
- * version 1.1(27-JULY-2013)
- *
+ * version 1.0(31-OCT-2011)
+ * 
  * Built on top of the jQuery library
  *   http://jquery.com
- *
+ * 
  * Documentation
  *   http://github.com/mambows/mobilemenu
  */
-(function ($) {
-    $.fn.mobileMenu = function (options) {
+(function($){
+$.fn.mobileMenu = function(options) {
+  
+ var defaults = {
+   defaultText: 'Navigate to...',
+   className: 'select-menu',
+   subMenuClass: 'sub-menu',
+   subMenuDash: '&ndash;'
+  },
+  settings = $.extend( defaults, options ),
+  el = $(this);
+ 
+ this.each(function(){
+  // ad class to submenu list
+  el.find('ul').addClass(settings.subMenuClass);
 
-        var defaults = {
-                defaultText: 'Navigate to...',
-                containerName: 'select-menu',
-                className: 'select',
-                subMenuClass: 'sub-menu',
-                subMenuDash: '&ndash;'
-            },
-            settings = $.extend(defaults, options),
-            el = $(this);
+  // Create base menu
+  $('<select />',{
+   'class' : settings.className
+  }).insertAfter( el );
 
-        this.each(function () {
-            var $el = $(this),
-                $select_menu;
+  // Create default option
+  $('<option />', {
+   "value"  : '#',
+   "text"  : settings.defaultText
+  }).appendTo( '.' + settings.className );
 
-            // ad class to submenu list
-            $el.find('ul').addClass(settings.subMenuClass);
+  // Create select option from menu
+  el.find('a,.separator').each(function(){
+   var $this  = $(this),
+     optText = $this.text(),
+     optSub = $this.parents( '.' + settings.subMenuClass ),
+     len   = optSub.length,
+     dash;
+   
+   // if menu has sub menu
+   if( $this.parents('ul').hasClass( settings.subMenuClass ) ) {
+    dash = Array( len+1 ).join( settings.subMenuDash );
+    optText = dash + optText;
+   }
+   if($this.is('span')){
+    // Now build menu and append it
+   $('<optgroup />', {
+    "label" : optText,
+   }).appendTo( '.' + settings.className );
+   }
+   else{
+    // Now build menu and append it
+   $('<option />', {
+    "value" : this.href,
+    "html" : optText,
+    "selected" : (this.href == window.location.href)
+   }).appendTo( '.' + settings.className );
+   }
 
-            // Create base menus
+  }); // End el.find('a').each
 
-            var $select_container = $('<div />', {
-                    'class': settings.containerName
-                }).insertAfter($el),
-                $select_menu = $('<select />', {
-                    'class': settings.className
-                }).appendTo($select_container);
+  // Change event on select element
+  $('.' + settings.className).change(function(){
+   var locations = $(this).val();
+   if( locations !== '#' ) {
+    window.location.href = $(this).val();
+   }
+  });
+  $('.select-menu').show();
 
-            // Create default option
-            $('<option />', {
-                "value": '#',
-                "text": settings.defaultText
-            }).appendTo($select_menu);
-
-            // Create select option from menus
-            $el.find('a').each(function () {
-
-
-
-                var $this = $(this),
-                    optText = '&nbsp;' + $this.text(),
-                    optSub = $this.parents('.' + settings.subMenuClass),
-                    len = optSub.length,
-                    dash;
-
-                if ($(this).hasClass('fa-home')) {
-                    optText = '&nbsp;Home';
-                }
-
-                // if menus has sub menus
-                if ($this.parents('ul').hasClass(settings.subMenuClass)) {
-                    dash = Array(len + 1).join(settings.subMenuDash);
-                    optText = dash + optText;
-                }
-
-                // Now build menus and append it
-                $('<option />', {
-                    "value": this.href,
-                    "html": optText,
-                    "selected": (this.href == window.location.href)
-                }).appendTo($select_menu);
-
-            }); // End el.find('a').each
-
-            // Change event on select element
-            $select_menu.change(function () {
-                var locations = $(this).val();
-                if (locations !== '#') {
-                    window.location.href = $(this).val();
-                }
-                ;
-            });
-        }); // End this.each
-
-        return this;
-
-    };
+ }); // End this.each
+ 
+ return this;
+};
 })(jQuery);
-$(document).ready(function () {
-    $('.sf-menu').mobileMenu();
-});

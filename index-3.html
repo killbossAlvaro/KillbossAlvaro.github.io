@@ -1,235 +1,185 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-    
-    <title>Productos</title>
+    <title>mercados</title>
     <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no"/>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cookiecuttr.css">
-    
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
-    <script src = "js/jquery.cookie.js" ></script> 
-    <script src = "js/jquery.cookiecuttr.js" ></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+		<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
 
+
+<script type="text/javascript">
+$(function(){
+$(".slide-down-box dt").click(function(){$(this).toggleClass("active").parent(".slide-down-box").find("dd").slideToggle(200);});
+})
+</script>
+  	<!--[if lt IE 8]>
+    		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+   	<![endif]-->
     <!--[if lt IE 9]>
-    <html class="lt-ie9">
-    <div style=' clear: both; text-align:center; position: relative;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
-                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-        </a>
-    </div>
-    <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <script src='js/device.min.js'></script>
 </head>
 
 <body>
-<div class="page">
-    <!--========================================================
-                              HEADER
-    =========================================================-->
-    <header id="header" class="header">
-        <div id="stuck_container" class="stuck_container">
-            <div class="container">
-                <div class="header_panel">
-                    <div class="brand">
-                        <h1 class="brand_name">
-                            <a href="index.html">
-                                <span class="brand_slogan">&nbsp;</span>
-                            </a>
-                        </h1>
-                    </div>  
-
-                    <nav class="nav">
-                        <ul class="sf-menu">
-                            <li class="active">
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="index-1.html">Sugerencias</a>
-                                <ul>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                        <ul>
-                                            <li>
-                                                <a href="#"></a>
-                                            </li>
-                                            <li>
-                                                <a href="#">r</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-2.html">Mercados</a>
-                            </li>
-                            <li>
-                                <a href="index-3.html">Productos</a>
-                            </li>
-                            <li>
-                                <a href="index-4.html">Escribenos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-
-    </header>
-    <!--========================================================
-                              CONTENT
-    =========================================================-->
-    <section id="content" class="content">
-
-        <div class="well well__ins1">
-            <div class="heading heading_skin1 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="container">
-                    <h3>Photo of the day</h3>
-                </div>
-            </div>
-            <div class="container off3">
-                <div class="row">
-                    <div class="grid_8 wow fadeInLeft" data-wow-delay="0.6s">
-                        <div class="lazy-img mg-add" style="padding-bottom: 45.71428571428571%">
-                            <img data-src="images/page-4_img01.jpg" src="#" alt=""/>
+<!--==============================header=================================-->
+<header>
+    <div class="container">
+         <div class="navbar navbar_ clearfix">
+            <div class="navbar-inner">      
+                  <div class="clearfix">
+                  	<h1 class="brand"><a href="index.html"><img src="img/logo.png" alt=""></a></h1> 
+                  	<div class="nav-collapse nav-collapse_ collapse">
+                  	    <div class="clearfix">
+                          <ul class="nav sf-menu clearfix">
+                            <li><a href="index.html">inicio&nbsp;</a></li>
+                            <li class="sub-menu"><a href="index-1.html">mision&nbsp;&nbsp;</a>                            </li>
+                            <li><a href="index-2.html">productos&nbsp;</a></li>
+                            <li class="active"><a href="index-3.html">mercados&nbsp;</a></li>
+                            <li><a href="index-4.html">escribenos&nbsp;</a></li>
+                          </ul>
+                          
                         </div>
-                    </div>
-                    <div class="grid_4 wow fadeInRight" data-wow-delay="0.8s">
-                        <h5>April 18, 2015</h5>
-                        <h4 class="off1">
-                            <a href="#">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit.
-                            </a>
-                        </h4>
-                        <p class="off1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan
-                            nulla vel diam. </p>
+                  	</div>
+                  </div>
+             </div>  
+         </div>
+    </div>
+</header>
+<div id="content">
+  <div class="container"> 
+        <div class="row">
+             <article class="span4">
+               <h2>support 24/7</h2>
+               <div class="img-indent">
+                 <figure class="img-polaroid"><img src="img/page-3-img.jpg" alt=""></figure>
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                 <span>Ut wisi enim ad minim veniam, quis nostrud exerci.<br>
+ tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zril delenit augue duis dolore te feugait nulla facilisi.</span>
+                 </p>
+                 <h5><a href="#">Psum dolor sit amet, consect
+etuer adipiscing In pede mi, aliquet sit amet, euismod in,auctor ut, ligulaelit.
+sed diam nonummy </a></h5>
+               </div>
 
-                        <p class="off2">Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet
-                            sit amet, euismod in,
-                            auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis,
-                            lobortis dignissim,
-                            pulvinar ac, lorem. Vestibulum sed ante.</p>
+             </article>
+             <article class="span8">
+               <h2>Faqs</h2>
+
+               <span class="lh20">We know you’ve problably got some questions about how this thing works. We hope to answer most of them in this section, but if not, just give us a <strong class="col">call. 888.123.4567</strong></span>
+
+
+               <div class="slide-down-pad">
+                <dl class="slide-down-box">
+                  <dt class="active"><span></span>1. Donec in velit vel ipsum auctor pulvinar?</dt>
+                  <dd>
+                    <div class="inner">
+                     Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Donec sagittis euismod purus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.
                     </div>
-                </div>
-            </div>
+                  </dd>
+                </dl>
+                <dl class="slide-down-box">
+                  <dt><span></span>2. Nulla facilisi. Aenean nec eFusce euismod consequat anteros. Vestibulum ante?</dt>
+                  <dd>
+                    <div class="inner">
+                     Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="slide-down-box">
+                  <dt><span></span>3. Vestibulum sed ante. Donec sagittiFusce euismod consequat antes euismod?</dt>
+                  <dd>
+                    <div class="inner">
+                     Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Donec in velit vel ipsum auctor pulvinar. Vestibulum sed ante. Donec sagittis euismod purus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="slide-down-box">
+                  <dt><span></span>4. Sed ut perspiciatis unde omFusce euismod consequat antenis iste?</dt>
+                  <dd>
+                    <div class="inner">
+                     Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Donec in velit vel ipsum auctor pulvinar. Vestibulum sed ante. Donec sagittis euismod purus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="slide-down-box">
+                  <dt><span></span>5. Proin Fusce euismod consequat antedictum elementum velit?</dt>
+                  <dd>
+                    <div class="inner">
+                     Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Donec in velit vel ipsum auctor pulvinar. Vestibulum sed ante. Donec sagittis euismod purus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="slide-down-box">
+                  <dt><span></span>6. Neque porro est, qui doloremFusce euismod consequat ante?</dt>
+                  <dd>
+                    <div class="inner">
+                     Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Donec in velit vel ipsum auctor pulvinar. Vestibulum sed ante. Donec sagittis euismod purus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="slide-down-box">
+                  <dt><span></span>7. Fusce euismod consequat anteQuis autem vel eum iure reprehenderit qui?</dt>
+                  <dd>
+                    <div class="inner">
+                     Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Donec in velit vel ipsum auctor pulvinar. Vestibulum sed ante. Donec sagittis euismod purus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.
+                    </div>
+                  </dd>
+                </dl>
+               </div>
+               <!-- <ul class="list-big">
+                 <li>
+                  <h5><a href="#">1. Donec in velit vel ipsum auctor pulvinar?</a></h5>
+                 </li>
+                 <li>
+                   <h5><a href="#">2. Nulla facilisi. Aenean nec eFusce euismod consequat anteros. Vestibulum ante?</a></h5>
+                 </li>
+                 <li><h5><a href="#">3. Vestibulum sed ante. Donec sagittiFusce euismod consequat antes euismod?</a></h5></li>
+                 <li><h5><a href="#">4. Sed ut perspiciatis unde omFusce euismod consequat antenis iste?</a></h5>
+                  <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Donec in velit vel ipsum auctor pulvinar. Vestibulum sed ante. Donec sagittis euismod purus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.</p>
+                 </li>
+                 <li><h5><a href="#">5. Proin Fusce euismod consequat antedictum elementum velit?</a></h5></li>
+                 <li><h5><a href="#">6. Neque porro est, qui doloremFusce euismod consequat ante?</a></h5>
+                  <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce sscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculmus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Donec in velit vel ipsum auctor pulvinar. Vestibulum sed ante. Donec sagittis euismod purus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.</p>
+
+                 </li>
+                 <li><h5><a href="#">7. Fusce euismod consequat anteQuis autem vel eum iure reprehenderit qui?</a></h5></li>
+               </ul> -->
+
+
+             </article>
         </div>
-
-        <div class="heading heading_skin3 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="container">
-                <h3>all photos</h3>
-            </div>
-        </div>
-
-        <div class="bg-content off2 well2">
-            <div class="container">
-                <div class="row">
-                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.4s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 84.82384823848238%"
-                           href="images/page-4_img02_original.jpg">
-                            <img data-src="images/page-4_img02.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h4 class="off3">
-                            <a href="#">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, conse.</a>
-                        </h4>
-                    </div>
-                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.6s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 84.82384823848238%"
-                           href="images/page-4_img03_original.jpg">
-                            <img data-src="images/page-4_img03.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h4 class="off3">
-                            <a href="#">Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan
-                                malesuada orci.
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.8s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 84.82384823848238%"
-                           href="images/page-4_img04_original.jpg">
-                            <img data-src="images/page-4_img04.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h4 class="off3">
-                            <a href="#">Duis ultricies pharetra magna. Donec accumsan malesuada orci.</a>
-                        </h4>
-                    </div>
-                </div>
-                <div class="row off1">
-                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.4s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 84.82384823848238%"
-                           href="images/page-4_img05_original.jpg">
-                            <img data-src="images/page-4_img05.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h4 class="off3">
-                            <a href="#">Donec accumsan malesuada orci. Donec sit
-                                amet eros.
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="grid_4 wow fadeInUp" data-wow-delay="0.6s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 84.82384823848238%"
-                           href="images/page-4_img06_original.jpg">
-                            <img data-src="images/page-4_img06.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h4 class="off3">
-                            <a href="#">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, conse.</a>
-                        </h4>
-                    </div>
-                    <div class="grid_4 wow fadeInRight" data-wow-delay="0.4s">
-                        <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 84.82384823848238%"
-                           href="images/page-4_img07_original.jpg">
-                            <img data-src="images/page-4_img07.jpg" src="#" alt=""/>
-                            <span class="thumb_overlay"></span>
-                        </a>
-                        <h4 class="off3">
-                            <a href="#">Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet
-                                eros.
-                            </a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!--========================================================
-                              FOOTER
-    =========================================================-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="copyright wow fadeInUp" data-wow-delay="0.4s">
-                 <span id="copyright-year">&nbsp;</span> 
-                <a href="index-5.html">&nbsp;</a>
-            </div>
-        </div>
-    </footer>
-</div>
-
-<script src="js/script.js"></script>
+       
+  </div>
+</div> 
+<footer>
+  <div class="container">
+	     <div class="row">    
+	         <article class="span12">
+                 <div class="block-footer">
+                   <span>satellite &copy; 2013 | &nbsp;</span><a href="index-5.html">Privacy Policy</a><br>
+                   <ul class="list-soc">
+                     <li><a href="#" class="icon"></a></li>
+                     <li><a href="#" class="icon-1"></a></li>
+                     <li><a href="#" class="icon-2"></a></li>
+                   </ul>
+                 </div>
+           </article>
+       </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>

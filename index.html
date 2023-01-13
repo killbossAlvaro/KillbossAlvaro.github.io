@@ -1,506 +1,78 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-       
-
-    <title>DMESA</title>
+    <title>inicio</title>
     <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no"/>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cookiecuttr.css">
-
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
-    <script src = "js/jquery.cookie.js" ></script> 
-    <script src = "js/jquery.cookiecuttr.js" ></script>
-
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+		<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  	<!--[if lt IE 8]>
+    		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+   	<![endif]-->
     <!--[if lt IE 9]>
-    <html class="lt-ie9">
-    <div style=' clear: both; text-align:center; position: relative;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
-                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-        </a>
-    </div>
-    <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <script src='js/device.min.js'></script>
 </head>
 
-<body>
-<div class="page">
-    <!--========================================================
-                              HEADER
-    =========================================================-->
-    <header id="header" class="header">
-        <div id="stuck_container" class="stuck_container">
-            <div class="container">
-                <div class="header_panel">
-                    <div class="brand">
-                        <h1 class="brand_name">
-                            <a href="index.html">
-                                <span class="brand_slogan">&nbsp;</span>
-                            </a>
-                        </h1>
-                    </div>
+<body id="splash">
+<?php
 
-                    <nav class="nav">
-                        <ul class="sf-menu">
-                            <li class="active">
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="index-1.html">Sugerencias</a>
-                                <ul>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                        <ul>
-                                            <li>
-                                                <a href="#"></a>
-                                            </li>
-                                            <li>
-                                                <a href="#">r</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="index-2.html">Mercados</a>
-                            </li>
-                            <li>
-                                <a href="index-3.html">Productos</a>
-                            </li>
-                            <li>
-                                <a href="index-4.html">Escribenos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+  header( 'Location: http://www.yoursite.com/new_page.html' ) ;
 
-    </header>
-    <!--========================================================
-                              CONTENT
-    =========================================================-->
-    <section id="content" class="content">
-
-        <div class="container well">
-            <div class="img-wrap">
-                <div class="left_side wow fadeInLeft" data-wow-delay="0.4s">
-                    <div class="img-caption">
-                        <div class="lazy-img" style="padding-bottom: 66.79389312977099%">
-                            <img data-src="images/page-1_img01.jpg" src="#" alt=""/>
-                        </div>
-                        <div class="caption">
-                            <h2>
-                                <a href="#">Lo que le hace falta a tu cosina                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                                </a>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="right_side">
-                    <div class="img-caption wow fadeInRight" data-wow-delay="0.6s">
-                        <div class="lazy-img" style="padding-bottom: 68.14621409921671%">
-                            <img data-src="images/page-1_img02.jpg" src="#" alt=""/>
-                        </div>
-                        <div class="caption">
-                            <h2>
-                                <a href="#">Sabor
-                                </a>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="img-caption wow fadeInRight" data-wow-delay="0.8s">
-                        <div class="lazy-img" style="padding-bottom: 68.14621409921671%">
-                            <img data-src="images/page-1_img03.jpg" src="#" alt=""/>
-                        </div>
-                        <div class="caption">
-                            <h2>
-                                <a href="#">Exquisitez
-                                </a>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="heading heading_skin1 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="container">
-                <h3>Aca les presentamos algunos de nuestros productos</h3>
-            </div>
-        </div>
-
-        <div class="container well1">
-            <div class="row">
-                <div class="grid_3 wow fadeInLeft" data-wow-delay="0.4s">
-                    <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 56.2962962962963%"
-                       href="images/page-1_img04_original.jpg">
-                        <img data-src="images/page-1_img04.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off1">
-                        <a href="#">Pimienta Dulse </a>
-                    </h5>
-                    <h4 class="off1">en desarrollo</h4>
-                </div>
-                <div class="grid_3 wow fadeInLeft" data-wow-delay="0.6s">
-                    <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 56.2962962962963%"
-                       href="images/page-1_img05_original.jpg">
-                        <img data-src="images/page-1_img05.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off1">
-                        <a href="#">Colorante de achote</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo</h4>
-                </div>
-                <div class="grid_3 wow fadeInLeft" data-wow-delay="0.8s">
-                    <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 56.2962962962963%"
-                       href="images/page-1_img06_original.jpg">
-                        <img data-src="images/page-1_img06.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off1">
-                        <a href="#">sazon comleto</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo</h4>
-                </div>
-                <div class="grid_3 wow fadeInLeft" data-wow-delay="0.8s">
-                    <a class="lazy-img thumb" data-fancybox-group="1" style="padding-bottom: 56.2962962962963%"
-                       href="images/page-1_img07_original.jpg">
-                        <img data-src="images/page-1_img07.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off1">
-                        <a href="#">bijol</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="container well2">
-            <div class="row">
-                <div class="grid_6">
-                    <div class="heading heading_skin2 heading__d_first wow fadeInLeft" data-wow-delay="0.6s">
-                        <h3>Sugerencias</h3>
-                    </div>
-                    <div class="row off1">
-                        <div class="grid_3 wow fadeInLeft" data-wow-delay="0.4s">
-                            <div class="lazy-img" style="padding-bottom: 56.2962962962963%">
-                                <img data-src="images/page-1_img08.jpg" src="#" alt=""/>
-                            </div>
-                            <h5 class="off2">11-30-2014</h5>
-                            <h4 class="off1">
-                                <a href="#">en desarrollo.</a>
-                            </h4>
-                            <p>en desarrollo</p>
-                        </div>
-                        <div class="grid_3 wow fadeInLeft" data-wow-delay="0.6s">
-                            <div class="box">
-                                <div class="box_aside"><img src="images/page-1_img09.jpg" alt=""/></div>
-                                <div class="box_cnt__no-flow">
-                                    <h5>12-14-2014</h5>
-                                    <h4 class="off1">
-                                        <a href="#">en desarrollo</a>
-                                    </h4>
-                                </div>
-                            </div>
-
-                            <div class="box off1">
-                                <div class="box_aside"><img src="images/page-1_img10.jpg" alt=""/></div>
-                                <div class="box_cnt__no-flow">
-                                    <h5>12-21-2014</h5>
-                                    <h4 class="off1">
-                                        <a href="#">en desarrollo</a>
-                                    </h4>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="grid_6 wow fadeInRight" data-wow-delay="0.8s">
-                    <div class="heading heading_skin3 heading__d_second">
-                        <h3>Mercados</h3>
-                    </div>
-                    <a class="lazy-img thumb off1" style="padding-bottom: 48.15465729349736%"
-                       href="images/page-1_img11_original.jpg">
-                        <img data-src="images/page-1_img11.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="heading heading_skin3 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="container">
-                <h3>Mas comprados</h3>
-            </div>
-        </div>
-
-        <div class="container well1 well1__ins1">
-            <div class="row">
-                <div class="grid_4 wow fadeInRight" data-wow-delay="0.4s">
-                    <a class="lazy-img thumb" data-fancybox-group="2" style="padding-bottom: 54.59459459459459%"
-                       href="images/page-1_img12_original.jpg">
-                        <img data-src="images/page-1_img12.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off2">en desarrollo
-                        <a href="#">April 18, 2014</a>
-                        by
-                        <a href="#">Admin</a>
-                        in
-                        <a href="#">General</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo.</h4>
-                </div>
-                <div class="grid_4 wow fadeInRight" data-wow-delay="0.6s">
-                    <a class="lazy-img thumb" data-fancybox-group="2" style="padding-bottom: 54.59459459459459%"
-                       href="images/page-1_img13_original.jpg">
-                        <img data-src="images/page-1_img13.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off2">Posted on
-                        <a href="#">April 18, 2014</a>
-                        by
-                        <a href="#">Admin</a>
-                        in
-                        <a href="#">General</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo.</h4>
-                </div>
-                <div class="grid_4 wow fadeInRight" data-wow-delay="0.8s">
-                    <a class="lazy-img thumb" data-fancybox-group="2" style="padding-bottom: 54.59459459459459%"
-                       href="images/page-1_img14_original.jpg">
-                        <img data-src="images/page-1_img14.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off2">Posted on
-                        <a href="#">April 18, 2014</a>
-                        by
-                        <a href="#">Admin</a>
-                        in
-                        <a href="#">General</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo.</h4>
-                </div>
-            </div>
-            <div class="row off1">
-                <div class="grid_4 wow fadeInRight" data-wow-delay="0.8s">
-                    <a class="lazy-img thumb" data-fancybox-group="2" style="padding-bottom: 54.59459459459459%"
-                       href="images/page-1_img15_original.jpg">
-                        <img data-src="images/page-1_img15.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off2">Posted on
-                        <a href="#">April 18, 2014</a>
-                        by
-                        <a href="#">Admin</a>
-                        in
-                        <a href="#">General</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo.</h4>
-                </div>
-                <div class="grid_4 wow fadeInRight" data-wow-delay="0.6s">
-                    <a class="lazy-img thumb" data-fancybox-group="2" style="padding-bottom: 54.59459459459459%"
-                       href="images/page-1_img16_original.jpg">
-                        <img data-src="images/page-1_img16.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off2">Posted on
-                        <a href="#">April 18, 2014</a>
-                        by
-                        <a href="#">Admin</a>
-                        in
-                        <a href="#">General</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo.</h4>
-                </div>
-                <div class="grid_4 wow fadeInRight" data-wow-delay="0.4s">
-                    <a class="lazy-img thumb" data-fancybox-group="2" style="padding-bottom: 54.59459459459459%"
-                       href="images/page-1_img17_original.jpg">
-                        <img data-src="images/page-1_img17.jpg" src="#" alt=""/>
-                        <span class="thumb_overlay"></span>
-                    </a>
-                    <h5 class="off2">Posted on
-                        <a href="#">April 18, 2014</a>
-                        by
-                        <a href="#">Admin</a>
-                        in
-                        <a href="#">General</a>
-                    </h5>
-                    <h4 class="off1">en desarrollo</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="container well2 well2__ins1">
-            <div class="row">
-                <div class="grid_6 wow fadeInLeft" data-wow-delay="0.4s">
-                    <div class="heading heading_skin1 heading__d_first">
-                        <h3>en desarrollo&nbsp;</h3>
-                    </div>
-                    <h4 class="off2">en desarrollo </h4>
-
-                    <p>en desarrollo </p>
-                </div>
-                <div class="grid_6 wow fadeInRight" data-wow-delay="0.6s">
-                    <div class="heading heading_skin3 heading__d_second">
-                        <h3>En desarrollo</h3>
-                    </div>
-                    <div class="row off2">
-                        <div class="grid_3">
-                            <div class="box">
-                                <div class="box_aside"><img src="images/page-1_img18.jpg" alt=""/></div>
-                                <div class="box_cnt__no-flow">
-                                    <h5>12-21-2014</h5>
-                                    <h4 class="off1">
-                                        <a href="#">en desarrollo</a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid_3">
-                            <div class="box">
-                                <div class="box_aside"><img src="images/page-1_img19.jpg" alt=""/></div>
-                                <div class="box_cnt__no-flow">
-                                    <h5>12-21-2014</h5>
-                                    <h4 class="off1">
-                                        <a href="#">en desarrollo</a>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="heading heading_skin2 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="container">
-                <h3>en desarrollo&nbsp;</h3>
-            </div>
-        </div>
-
-        <div class="bg-content">
-            <div class="container well1 off1">
-                <div class="row">
-                    <div class="grid_3 wow fadeInUp" data-wow-delay="0.6s">
-                        <ul class="marked-list">
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid_3 wow fadeInUp" data-wow-delay="1s">
-                        <ul class="marked-list">
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollod</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid_3 wow fadeInUp" data-wow-delay="0.4s">
-                        <ul class="marked-list">
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid_3 wow fadeInUp" data-wow-delay="0.8s">
-                        <ul class="marked-list">
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                            <li>
-                                <a href="#">en desarrollo</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!--========================================================
-                              FOOTER
-    =========================================================-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="copyright wow fadeInUp" data-wow-delay="0.4s">
-                Desarrollador web : Alvaro Escalona © <span id="copyright-year"></span> 
-                <a href="index-5.html">Privacy Policy</a>
-                <!-- {%FOOTER_LINK} -->
-            </div>
-        </div>
-    </footer>
+?>
+<!--==============================header=================================-->
+<header>
+<div class="container">
+  <div class="navbar navbar_ clearfix">
+    <div class="navbar-inner">
+      <div class="clearfix">
+        <h1 class="brand"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+        <div class="nav-collapse nav-collapse_ collapse">
+          <div class="clearfix">
+            <ul class="nav sf-menu clearfix">
+              <li class="active"><a href="index.html"> inicio</a></li>
+              <li class="sub-menu"><a href="index-1.html">mision </a>              </li>
+              <li><a href="index-2.html">Productos </a></li>
+              <li><a href="index-3.html">mercados</a></li>
+              <li><a href="index-4.html">escrivenos </a></li>
+            </ul>
 </div>
-
-<script src="js/script.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="icon-menu"> <i aria-hidden="true" class="fa fa-bars text-white"></i> </div>
+  </header>
+  <!-- <div id="content">
+  <div class="container"> 
+        <div class="row">
+             <article class="span"></article>
+        
+        </div>
+  </div>
+</div> -->
+  <!-- <footer>
+  <div class="container">
+	     <div class="row">
+	         <article class="span12">
+                 <span>Word &copy; 2013 | &nbsp;&nbsp;</span><a href="index-5.html">Privacy Policy</a><br> -->
+  <!-- {%FOOTER_LINK} -->
+  <!-- </article>
+       </div>
+  </div>
+</footer> -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</div>
 </body>
 </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>404</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+		<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+  	<!--[if lt IE 8]>
+    		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+   	<![endif]-->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--==============================header=================================-->
+<header>
+    <div class="container">
+         <div class="navbar navbar_ clearfix">
+            <div class="navbar-inner">      
+                  <div class="clearfix">
+                  	<h1 class="brand"><a href="index.html"><img src="img/logo.png" alt=""></a></h1> 
+                  	<div class="nav-collapse nav-collapse_ collapse">
+                  	    <div class="clearfix">
+                          <ul class="nav sf-menu clearfix">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="sub-menu"><a href="index-1.html">Company</a>
+                               <ul>
+                                <li><a href="#">Analyst relations</a></li>
+                                <li class="sub-menu-1"><a href="#">Awards</a>
+                                  <ul>
+                                    <li><a href="#">Green enterprise</a></li>
+                                    <li><a href="#">Legal Information</a></li>
+                                    <li><a href="#">Management team</a></li>
+                                    <li><a href="#">Press  &amp; Media</a></li>
+                                  </ul>
+                                </li>
+                                <li><a href="#">Company information</a></li>
+                                <li><a href="#">Consultants</a></li>
+                                <li><a href="#">Events</a></li>
+                               </ul>
+                            </li>
+                            <li><a href="index-2.html">Products &amp; Services</a></li>
+                            <li><a href="index-3.html">Support</a></li>
+                            <li><a href="index-4.html">Contacts</a></li>
+                          </ul>
+                          <div class="div-search">
+                            <span>search</span>
+                            <form id="search" action="search.php" method="GET" accept-charset="utf-8">
+                             <input type="text" value="" name="s">
+                            <a href="#" onClick="document.getElementById('search').submit()"></a>
+                            </form>
+                          </div>
+                        </div>
+                  	</div>
+                  </div>
+             </div>  
+         </div>
+    </div>
+</header>
+<div id="content-1">
+  <div class="container"> 
+        <div class="row box-404">
+            <article class="span5 offset2">
+              <img src="img/img-404.jpg" alt="">
+            </article>
+            <article class="span5">
+              <div class="block-404">
+                <h2>sorry!</h2>
+                <span>page not found</span>
+                <strong>error 404</strong>
+                <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+                <p>Please try using our search box below to look for information on the website.</p>
+
+                <form id="search-1" action="search.php" method="GET" accept-charset="utf-8">
+                 <input type="text" value="" name="s">
+                 <a href="#" onClick="document.getElementById('search-1').submit()" class="btn btn-1"><span>search</span></a>
+                </form>
+              </div>
+            </article>
+              
+        </div>
+       
+  </div>
+</div> 
+<footer>
+  <div class="container">
+	     <div class="row">    
+	         <article class="span12">
+                 <div class="block-footer">
+                   <span>satellite &copy; 2013 | &nbsp;</span><a href="index-5.html">Privacy Policy</a><br>
+                   <ul class="list-soc">
+                     <li><a href="#" class="icon"></a></li>
+                     <li><a href="#" class="icon-1"></a></li>
+                     <li><a href="#" class="icon-2"></a></li>
+                   </ul>
+                 </div>
+           </article>
+       </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
